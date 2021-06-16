@@ -1,15 +1,16 @@
-version: '3.7'
+version: "3.4"
+
 services:
-    postgres:
-        image: postgres:10.5
-        restart: always
-        environment: 
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: docker
-          POSTGRES_DB: meditation
-        logging:
-          options:
-            max-size: 10m
-            max-file: "3"
-        ports:
-          - '5432:5432'
+  database:
+    image: postgres:13-alpine
+    environment:
+      - POSTGRES_DB=meditation
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_USER=postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - db_data:/var/lib/postgresql/data:rw
+
+volumes:
+  db_data:
