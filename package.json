@@ -4,7 +4,8 @@
   "description": "Node.js Rest API to Setta's Code Challenge",
   "scripts": {
     "start": "node dist/main/server.js",
-    "build": "rimraf dist && tsc"
+    "build": "rimraf dist && tsc",
+    "typeorm": "tsnd -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,8 @@
     "husky": "^4.3.8",
     "lint-staged": "^10.5.4",
     "rimraf": "^3.0.2",
+    "ts-node-dev": "^1.1.6",
+    "tsconfig-paths": "^3.9.0",
     "typescript": "^4.2.3"
   },
   "dependencies": {
