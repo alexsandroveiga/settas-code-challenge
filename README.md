@@ -40,7 +40,7 @@ Rodando a aplicação
   POST /api/time
 ```
 
-| Parameter   | Tipo     | Descrição                                          |
+| Parâmetro   | Tipo     | Descrição                                          |
 | :---------- | :------- | :------------------------------------------------- |
 | `device_id` | `string` | **Obrigatório**. Id do dispositivo                 |
 | `startTime` | `number` | **Obrigatório**. Timestamp do início da meditação  |
@@ -49,11 +49,11 @@ Rodando a aplicação
 #### Listando todos os tempos de meditação por dispositivo
 
 ```http
-  GET /api/time/${id}
+  GET /api/time/{id} 
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id do dispositivo   |
+| Parâmetro | Type     | Description                          |
+| :-------- | :------- | :----------------------------------- |
+| `id`      | `string` | **Obrigatório**. Id do dispositivo   |
 
   
