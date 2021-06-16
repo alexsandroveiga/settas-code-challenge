@@ -1,7 +1,7 @@
 import 'reflect-metadata'
 import 'module-alias/register'
 import 'dotenv/config'
-import { env } from '@/main/config/env'
+import env from '@/main/config/env'
 import { connection } from '@/infra/postgres/helpers'
 
 connection()

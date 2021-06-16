@@ -1,4 +1,4 @@
-export const env = {
+export default {
   port: process.env.PORT || 3333,
   db_host: process.env.DB_HOST || 'localhost',
   db_port: Number(process.env.DB_PORT) || 5432,
